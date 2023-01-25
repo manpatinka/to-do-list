@@ -1,0 +1,16 @@
+{
+    "to-dos": [
+        {
+            "title": "Date with Loren",
+            "details": "Gedimino prospektas 300, restaurant 'Restaurant'",
+            "complete": false,
+            "id": 4421
+        },
+        {
+            "title": "Go to gym",
+            "details": "Yoga group training at 10am",
+            "complete": true,
+            "id": 9412
+        }
+    ]
+}
