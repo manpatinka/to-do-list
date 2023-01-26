@@ -1,18 +1,19 @@
 import '../styles/todolist.css';
+
 import ToDoItem from './ToDoItem';
 
 const ToDoList = (props) => {
-    if (!props.todos) return null;
+    if(!props.todos) return null;
     return ( 
         <div className="todolist">
-          {props.todos.map((task) => {
+          {props.todos.map(task => 
             <ToDoItem
-              key={props.task.id}
+              key={task.id}
               task={task}
-              onDeleteTask={props.deleteTask}
+              onDeleteTask={props.onDeleteTask}
               onToggleTask={props.onToggleTask}
             />
-          })}
+          )}
         </div>
      );
 }
