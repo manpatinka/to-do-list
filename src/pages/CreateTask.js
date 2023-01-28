@@ -27,7 +27,7 @@ const CreateTask = () => {
             id: Math.floor(Math.random() * 1000)
         }
         console.log('new task', newTask);
-        fetch('http://localhost:4444/todos', {
+        fetch('http://localhost:4321/todos', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newTask)

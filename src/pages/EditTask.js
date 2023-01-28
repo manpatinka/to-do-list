@@ -21,7 +21,7 @@ const EditTask = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:4444/todos/${taskId}`)
+        fetch(`http://localhost:4321/todos/${taskId}`)
         .then((response) => {
             return response.json();
         }).then(data => {
@@ -36,7 +36,7 @@ const EditTask = () => {
 
     const handleUpdate= (e) => {
         e.preventDefault();
-        fetch(`http://localhost:4444/todos/${taskId}`, {
+        fetch(`http://localhost:4321/todos/${taskId}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(task)

@@ -17,7 +17,7 @@ const HomePage = () => {
     useEffect (() => {
         async function fetchTodos() {
             try {
-                const response = await fetch(`http://localhost:4444/todos`);
+                const response = await fetch(`http://localhost:4321/todos`);
                 const fetchedTodos = await response.json();
                 console.log(fetchedTodos);
                 setTodos(fetchedTodos);
@@ -30,7 +30,7 @@ const HomePage = () => {
 
     const handleDelete = (id) => {
         const newList = todos.filter((task) => task.id !== id);
-        return newList;
+        setTodos(newList);
     }
 
     const handleToggleComplete = (id) => {
@@ -70,7 +70,7 @@ const HomePage = () => {
 
     return ( 
         <div>
-          <h4>To Do List</h4>
+          <h1>To Do List</h1>
           <Link to={`/createtask`}>CreateTask</Link>
           <MainFilter 
             onUpdate={updateFilterHandler}

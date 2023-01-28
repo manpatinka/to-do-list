@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const ToDoItem = (props) => {
     const performDeleteTask = () => {
-        fetch(`http://localhost:4444/todos/${props.task.id}`, {
+        fetch(`http://localhost:4321/todos/${props.task.id}`, {
             method: 'DELETE'
         }).then(() => {
             props.onDeleteTask(props.task.id);
@@ -14,7 +14,7 @@ const ToDoItem = (props) => {
     };
 
     const performToggleTask = () => {
-        fetch(`http://localhost:4444/todos/${props.task.id}`, {
+        fetch(`http://localhost:4321/todos/${props.task.id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ complete: !props.task.complete })
@@ -31,7 +31,7 @@ const ToDoItem = (props) => {
     return ( 
         <div className={classes.join(' ')}>
           <div className="buttons">
-            <Link to={`/todos/${props.task.id}`}>edit</Link>
+            <button><Link to={`/todos/${props.task.id}`}>edit</Link></button>
             <button onClick={performDeleteTask}>delete</button>
           </div>
           <div className="todo">

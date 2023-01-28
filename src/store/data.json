@@ -1,16 +1,16 @@
 {
   "todos": [
     {
-      "title": "Date with Loren",
-      "details": "Gedimino prospektas 300, restaurant 'Restaurant'",
-      "complete": true,
-      "id": 4421
+      "title": "Do homework",
+      "details": "Math: p.120 ex.7-14\nFrench: dictionary\n",
+      "complete": false,
+      "id": 531
     },
     {
-      "title": "Add css to the project",
-      "details": "Create incredible styles for this magnificent project",
+      "title": "Go to gym",
+      "details": "Power yoga class + stretching",
       "complete": false,
-      "id": 973
+      "id": 997
     }
   ]
 }

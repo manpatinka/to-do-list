@@ -1,0 +1,35 @@
+.main-filter-nav {
+    display: inline-block;
+    margin: 0 3em -0.2em 20em;
+}
+
+.main-filter-nav button {
+  background-color: rgba(127, 105, 96, 0.9);
+  border: 1px solid rgba(127, 105, 96, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 2rem;
+  float: left;
+  font-family: monospace;
+  padding: 10px;
+
+}
+
+.main-filter-nav button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1300px) {
+  .main-filter-nav {
+    margin-left: 20%;
+}
+.main-filter-nav button {
+  margin-left: 5em;
+  width: 8rem;
+}
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
