@@ -30,19 +30,33 @@ const ToDoItem = (props) => {
 
     return ( 
         <div className={classes.join(' ')}>
+
+
           <div className="buttons">
             <button><Link to={`/todos/${props.task.id}`}>edit</Link></button>
             <button onClick={performDeleteTask}>delete</button>
           </div>
-          <div className="todo">
+
+
+          <div className="details">
+            <label className="switch">
+            <input 
+              type="checkbox" 
+              id="checkbox"
+              onClick={performToggleTask} 
+            />
+            <div className="slider"></div>
+            <div className="slider-card">
+              <div className="slider-card-face slider-card-front"></div>
+              <div className="slider-card-face slider-card-back"></div>
+            </div>
+            </label>
+           <div className="todo">
             <h4>{props.task.title}</h4>
             <p>{props.task.details}</p>
-            <input 
-              type="checkbox"
-              id="checkbox"
-              onClick={performToggleTask}  
-            />
           </div>
+          </div>
+         
         </div>
      );
 }

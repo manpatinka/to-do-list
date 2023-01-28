@@ -2,7 +2,7 @@ import '../styles/mainfilter.css';
 
 const MainFilter = (props) => {
     let active = {
-        backgroundColor: '#373b83'
+        backgroundColor: 'rgba(127, 105, 96)'
     };
 
     return ( 

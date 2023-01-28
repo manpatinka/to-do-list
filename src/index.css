@@ -3,7 +3,50 @@ body {
   background-image: url('./images/background.jpg');
   font-family: monospace;
   display: block;
+  margin-top: 3%;
 }
 
+#create-task {
+  display: flex;
+  padding: 1.1em 1.1em;
+  background: none;
+  border: 2px solid rgb(212, 180, 166);
+  font-size: 0.95rem;
+  color: #131313;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(157, 130, 119);
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+  width: 6rem;
+  margin-left: 18%;
+  margin-bottom: 0;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
+h1 {
+  font-size: 3rem;
+  color: rgb(212, 180, 166);
+  text-shadow: 1px 1px 1px #000;
+  float: right;
+  margin-right: 5%;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-right: 5%;
+  }
+
+  #create-task {
+    margin-left: 10%;
+    margin-bottom: -1rem;
+    font-size: 0.9rem;
+    width: 5.5rem;
+  }
+}

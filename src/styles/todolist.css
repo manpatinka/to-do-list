@@ -3,7 +3,7 @@
     background: 
       linear-gradient(0deg, 
       rgba(184, 152, 134, 0.3) 0%, 
-       rgba(127, 105, 96, 0.9) 100%);
+       rgba(127, 105, 96) 100%);
     width: 70%;
     min-height: 32rem;
     padding: 3% 0 2% 0;

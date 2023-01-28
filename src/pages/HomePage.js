@@ -71,7 +71,10 @@ const HomePage = () => {
     return ( 
         <div>
           <h1>To Do List</h1>
-          <Link to={`/createtask`}>CreateTask</Link>
+          <div id="create-task">
+            <Link to={`/createtask`}>Create Task</Link>
+          </div>
+          
           <MainFilter 
             onUpdate={updateFilterHandler}
             current={currentFilter}

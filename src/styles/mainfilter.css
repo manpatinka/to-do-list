@@ -4,15 +4,16 @@
 }
 
 .main-filter-nav button {
-  background-color: rgba(127, 105, 96, 0.9);
-  border: 1px solid rgba(127, 105, 96, 0.9);
+  background-color: rgba(127, 105, 96, 0.5);
+  border: 1px solid rgba(127, 105, 96, 0.5);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-left: 2rem;
   float: left;
   font-family: monospace;
   padding: 10px;
-
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
 
 .main-filter-nav button:hover {
