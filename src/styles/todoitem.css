@@ -134,3 +134,9 @@
   position: relative;
   right: -90%;
 }
+
+@media only screen and (max-width: 1300px) {
+  .buttons {
+    right: -85%;
+  }
+}
