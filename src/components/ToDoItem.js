@@ -33,31 +33,29 @@ const ToDoItem = (props) => {
 
 
           <div className="buttons">
-            <button><Link to={`/todos/${props.task.id}`}>edit</Link></button>
-            <button onClick={performDeleteTask}>delete</button>
+            <button className="button-60"><Link to={`/todos/${props.task.id}`}>edit</Link></button>
+            <br />
+            <button className="button-60" onClick={performDeleteTask}>delete</button>
           </div>
 
-
-          <div className="details">
-            <label className="switch">
-            <input 
-              type="checkbox" 
-              id="checkbox"
-              onClick={performToggleTask} 
-            />
-            <div className="slider"></div>
-            <div className="slider-card">
-              <div className="slider-card-face slider-card-front"></div>
-              <div className="slider-card-face slider-card-back"></div>
-            </div>
+          <div className="comlete">
+            <label class="checkbox">
+              <input 
+                type="checkbox" 
+                id="checkbox"
+                onClick={performToggleTask}
+              />
+              <span></span>
             </label>
+          </div>
+          
            <div className="todo">
             <h4>{props.task.title}</h4>
             <p>{props.task.details}</p>
           </div>
-          </div>
-         
+
         </div>
+         
      );
 }
  
