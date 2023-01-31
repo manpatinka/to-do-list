@@ -13,7 +13,7 @@ const ToDoItem = (props) => {
         }).catch((err) => console.log(err));
     };
 
-    const performToggleTask = () => {
+    const performToggleTask = (e) => {
         fetch(`http://localhost:4321/todos/${props.task.id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
@@ -38,15 +38,10 @@ const ToDoItem = (props) => {
             <button className="button-60" onClick={performDeleteTask}>delete</button>
           </div>
 
-          <div className="comlete">
-            <label class="checkbox">
-              <input 
-                type="checkbox" 
-                id="checkbox"
-                onClick={performToggleTask}
-              />
-              <span></span>
-            </label>
+          <div className="toggle">
+           
+          <button id="toggle" onClick={performToggleTask}></button>
+          <span id="done" onClick={performToggleTask}>{ props.task.complete ? "✓" : ""}</span>
           </div>
           
            <div className="todo">

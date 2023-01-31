@@ -53,20 +53,17 @@ const CreateTask = () => {
               name="title"
               onChange={handleChange}
               value={task.title}
-              maxLength={37}
+              maxLength={40}
               size={32}
               required
             />
-    
-            
           </div>
-          
           <br />
           <label>Details</label>
           <br />
           <textarea 
             name="details" 
-            cols="50"
+            cols="45"
             rows="10"
             onChange={handleChange}
             value={task.details}
@@ -74,7 +71,7 @@ const CreateTask = () => {
             >
           </textarea>
           <br />
-          <button className="add-task">Add Task</button>
+          <button className="add-edit-button">Add Task</button>
         </form>
         </div>
         

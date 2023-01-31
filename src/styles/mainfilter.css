@@ -12,6 +12,7 @@
   float: left;
   font-family: monospace;
   padding: 10px;
+  font-size: larger;
   font-weight: bolder;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
@@ -20,17 +21,59 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1110px) {
   .main-filter-nav {
-    margin-left: 20%;
+    margin-left: 23%;
 }
 .main-filter-nav button {
-  margin-left: 5em;
-  width: 8rem;
+  margin-left: 4em;
+  width: 7rem;
 }
   
 }
 
-@media only screen and (max-width: 1024px) {
-  
+@media only screen and (max-width: 1110px) {
+  .main-filter-nav {
+    margin-left: 30%;
+  }
+  .main-filter-nav button {
+    margin-left: 1em;
+    width: 7rem;
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+  .main-filter-nav button{
+    max-width: 5rem;
+    padding: 0 auto;
+    margin-left: 0.6rem;
+  }
+  .main-filter-nav {
+    margin-left: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .main-filter-nav button{
+    max-width: 4rem;
+    padding: 0 auto;
+    margin-left: 0.6rem;
+  }
+  .main-filter-nav {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .main-filter-nav button{
+    max-width: 4rem;
+    padding: 0 auto;
+    margin-left: 0.3rem;
+  }
+  .main-filter-nav {
+    margin-left: 10%;
+    margin-top: 5%;
+  }
 }

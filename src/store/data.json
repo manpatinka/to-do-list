@@ -1,16 +1,22 @@
 {
   "todos": [
     {
-      "title": "Do homework",
-      "details": "Math: p.120 ex.7-14\nFrench: dictionary\n",
-      "complete": true,
+      "title": "Run around and scream",
+      "details": "be careful if neighbours call the police!",
+      "complete": false,
       "id": 531
     },
     {
-      "title": "Lalala",
-      "details": "oooooooooooooooooo!",
-      "complete": false,
-      "id": 54
+      "title": "Finish to-do-list project",
+      "details": "add styles, make responsive",
+      "complete": true,
+      "id": 286
+    },
+    {
+      "title": "Bake cookies ",
+      "details": "Mix flour, eggs, sugar and chocolate and bake for 30min 200deg",
+      "complete": true,
+      "id": 472
     }
   ]
 }

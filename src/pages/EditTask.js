@@ -49,30 +49,38 @@ const EditTask = () => {
 
     return ( 
         <div>
-        <Link to={`/`}>Home</Link>
+        <Link to={`/`}><span className="back-home">&#8592; back home</span></Link>
+        <br />
           <form 
             onSubmit={handleUpdate}
           >
+          <div className="input-group">
             <label>Title</label>
+            <br />
             <input 
               type="text"
               name="title"
               onChange={handleChange}
               value={task.title}
-              maxLength={22}
+              maxLength={40}
+              size={32}
               required
             />
+            <br />
             <label>Details</label>
+            <br />
             <textarea 
               name="details" 
-              cols="30"
+              cols="50"
               rows="10"
               onChange={handleChange}
               value={task.details}
               required
               >
             </textarea>
-            <button className="add-edit-buttons">Edit Task</button>
+            </div>
+            <br />
+            <button className="add-edit-button">Edit Task</button>
           </form>
         </div>
         

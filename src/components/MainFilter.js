@@ -17,13 +17,13 @@ const MainFilter = (props) => {
             onClick={ () => props.onUpdate('pending') }
             style={ props.current === 'pending' ? active : undefined }
           >
-            Pending
+            Tasks
           </button>
           <button
             onClick={ () => props.onUpdate('completed') }
             style={ props.current === 'completed' ? active : undefined }
           >
-            Completed
+            Done
           </button>
         </nav>
      );
